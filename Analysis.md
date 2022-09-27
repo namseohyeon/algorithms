@@ -18,8 +18,10 @@ void seqsearch(int n, const keytype x, index& location){
 
 
 - while 문을 수행할 때마다 검색 대상의 크기가 1/2씩 감소하기 떄문에 최악의 경우라도 logn + 1개 검사
+
 ### 순차검색 vs 이분검색
 - 이분검색이 훨씬 크기가 작아짐
+
 ## 배열에 있는 원소 덧셈
 - 문제: 크기가 n인 배열s에 있는 모든 수를 더하여라
 ```
@@ -35,6 +37,7 @@ number sum(int n, const number s[]){
 - 배열에 있는 원소의 덧셈
     - 단위연산 덧셈: 총 수행 횟수 T(n) = 2n
     - 단위연산 지정문: 총 수행 횟수 T(n) = 2n + 2
+
 ## 교환정렬
 - 문제: 비내림차순으로 n개의 키를 정렬
 ```
@@ -58,6 +61,7 @@ void exchangesort(int n, keytype s[]){
     - 최선의 경우
         - 항상 조건문이 거짓이 되는 경우
         - 배열이 이미 정렬된 경우: c(상수)
+        
 ## Divide&Conquer
 - T(n):
     - g(n)
@@ -72,6 +76,7 @@ else{
     return conbine(D&C(p,m),D&C(m+1,q))
 }
 ```
+
 ## 이분 검색 알고리즘 (Binary search)
 - 문제: 크기가 n인 <b>정렬된</b> 배열s에 x가 있는가?
 - recursive 알고리즘
@@ -120,6 +125,7 @@ void binsearch(int n, const keytype s[], keytype x, index& location){
         - 합병정렬
         - 퀵정렬
         - 힙정렬
+
 ## 합병정렬
 - 문제: n개의 정수를 비내림차순으로 정렬
 - 전략: 
@@ -194,6 +200,7 @@ procedure partition(p,j)
     - 딱 중간으로 못 나눌 수 있음
     - 독립적으로 분배
     - merge안해도 됨
+    
 ## selection
 - 문제: k번째 작은 원소를 찾는 문제
 - 알고리즘
